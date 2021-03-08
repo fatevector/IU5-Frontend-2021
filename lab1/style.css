@@ -1,0 +1,27 @@
+h1, h2 {
+    text-decoration: underline;
+    color:cadetblue;
+}
+body {
+    background-color:#9bacc2;
+}
+
+.base {
+    margin-top: 30px;
+    margin-left: 10%;
+    padding: 10px 30px;
+    background-color:rgb(225, 229, 241);
+}
+
+#content {
+    width:auto;
+    background-color: aliceblue;
+}
+
+.italic::first-line {
+    font-style: italic;  
+}
+
+.text:first-child {
+    font-size: 20em;
+}
