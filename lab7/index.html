@@ -5,11 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
     <title>Lab7</title>
 </head>
 
 <body>
-
+    <div class="container">
+        <div class="navigation">
+            <img src="img/label.png" id="label">
+            <div class="navigation-item">
+                <input id="search-field" type="text" placeholder="Название города">
+                <div id="search-button">Поиск</div>
+            </div>
+        </div>
+        <div class="error">
+            
+        </div>
+        <div class="data-field">
+            <h3>Погода в городе <span id="city"></span> на сегодня:</h3>
+            <div>
+                <div style="text-align: center;"><span id="temp"></span> С</div>
+                <div id="description"></div>
+                <div><img id="weather-img"></div>
+            </div>
+            <div>
+                <h3>Ветер: </h3>
+                <div id="wind-direction"></div>
+                <div><span id="wind-speed"></span> м/с</div>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h3>Атмосферные показатели:</h3>
+                <div>Влажность: <span id="humidity"></span>%</div>
+                <div>Давление: <span id="pressure"></span></div>
+            </div>
+            
+        </div>
+    </div>
 </body>
-
+<script src="./script.js"></script>
 </html>
