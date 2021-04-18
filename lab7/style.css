@@ -9,12 +9,25 @@ body {
     color: var(--white);
     font-size:3vw;
 }
+@media screen and (max-width:11520px)
+{
+    body{
+        font-size:20px;
+    }
+}
+@media screen and (max-width:600px)
+{
+    body{
+        font-size:3vw;
+    }
+}
 @media screen and (max-width:400px)
 {
     body{
         font-size:5vw;
     }
 }
+
 .container{
     display: flex;
     flex-direction: column;
@@ -25,17 +38,24 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%
+}
+@media screen and (max-width:11520px)
+{
+    .navigation{
+        width: 600px
+    }
+}
+@media screen and (max-width:600px)
+{
+    .navigation{
+        width: 100%
+    }
 }
 .navigation-item{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-}
-#label{
-    width: 20%;
-    border-radius: 5px;
 }
 #search-field{
     background-color: #28282e;
@@ -50,6 +70,32 @@ body {
     font-size:3vw;
     font-weight: 300;
 }
+@media screen and (max-width:11520px)
+{
+    #search-field{
+        font-size:18px;
+    }
+    #search-button{
+        font-size:18px;
+    }
+    #label{
+        width: 120px;
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width:600px)
+{
+    #search-field{
+        font-size:3vw;
+    }
+    #search-button{
+        font-size:3vw;
+    }
+    #label{
+        width: 20%;
+        border-radius: 5px;
+    }
+}
 @media screen and (max-width:400px)
 {
     #search-field{
@@ -59,6 +105,7 @@ body {
         font-size:5vw;
     }
 }
+
 .data-field{
     margin-top: 30px;
     width: 80%;
@@ -72,12 +119,28 @@ body {
     border-width: 3px;
     border-radius: 5px;
 }
-#weather-img{
-    width:30vw;
-}
 #temp{
     text-align: center;
 }
 #description{
     text-align: center;
+}
+@media screen and (max-width:11520px)
+{
+    .data-field{
+        width: 480px;
+    }
+    #weather-img{
+        width:180px;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .data-field{
+        width: 80%;
+        margin-top: 5vw;
+    }
+    #weather-img{
+        width:30vw;
+    }
 }
