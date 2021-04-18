@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AddTodo from "./Todo/AddTodo";
+import TodoList from "./Todo/TodoList";
 
 function App() {
+  const [todos, setTodos]=React.useState([
+    // { id: 1, completed: false, title: "Купить хлеб" },
+    // { id: 2, completed: false, title: "Купить масло" },
+    // { id: 3, completed: false, title: "Купить молоко " }
+  ])
+  function onChange(id){
+    setTodos(todos.map(todo=>{
+      if(id===todo.id) todo.completed=!todo.completed
+      return todo
+    })
+    )
+  }
+  function removeTodo(id){
+    setTodos(todos.filter(todo=>id!==todo.id))
+  }
+  function createTodo(note){
+    setTodos([...todos, {
+      id: Date.now(),
+      completed: false,
+      title: note
+    }])
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <h1>Список дел</h1>
+      <TodoList todos={todos} onChange={onChange} removeTodo={removeTodo}/>
+      <AddTodo createTodo={createTodo}/>
     </div>
-  );
+  ); 
 }
 
 export default App;
