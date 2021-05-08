@@ -19,7 +19,7 @@ const Home: React.FC = () => {
             onKeyPress={(event) => {
               if (event.code.toLowerCase() === "enter") {
                 if (search !== "") {
-                  history.push("/user");
+                  history.push("/lab10/build/user");
                 }
               }
             }}
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
             className="button"
             onClick={() => {
               if (search !== "") {
-                history.push("/user");
+                history.push("/lab10/build/user");
               }
             }}
           >Поиск</button>

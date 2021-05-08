@@ -23,7 +23,7 @@ const User: React.FC = () => {
     return (
       <div className="content">
         <div className="error">Пользователь не найден</div>
-        <Link to="/">
+        <Link to="/lab10/build/">
           <button className="button" onClick={cleanSearch}>Главная</button>
         </Link>
       </div>
@@ -49,7 +49,7 @@ const User: React.FC = () => {
         <div />
       )}
       
-      <Link to="/">
+      <Link to="/lab10/build/">
         <button className="button" onClick={cleanSearch}>Главная</button>
       </Link>
     </div>
