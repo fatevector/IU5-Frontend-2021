@@ -11,3 +11,88 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.usercard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 233, 205);
+  width:fit-content;
+  border-radius: 30px;
+  border-color: rgb(133, 133, 133);
+  border-style: outset;
+  padding: 20px;
+  margin: 20px 0;
+}
+.loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 233, 205);
+  border-color: rgb(133, 133, 133);
+  border-style: outset;
+  width:fit-content;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 233, 205);
+  border-color: rgb(133, 133, 133);
+  border-style: outset;
+  width:fit-content;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.avatar{
+  border-radius: 10%;
+  width: 300px;
+}
+h3{
+  margin:0;
+  margin-bottom: 15px;
+}
+.button{
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+
+.search-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 233, 205);
+  border-color: rgb(133, 133, 133);
+  border-style: outset;
+  width:fit-content;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.input-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+}
+.input{
+  margin-right: 10px;
+  height: 24px;
+  border-radius: 15px;
+}
